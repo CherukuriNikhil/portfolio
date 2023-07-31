@@ -1,0 +1,701 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgb(22, 22, 38);
+	color: aliceblue;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	margin: 30px  10px 0px;
+	padding: 10px 10%;
+	flex-wrap:wrap ;
+}
+
+nav h1 {
+	color: aliceblue;
+	font-size: 2rem;
+	color: rgb(96, 96, 226);
+	
+}
+
+nav ul {
+	display: flex;
+	gap: 5px;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+
+nav ul li a {
+	color: aliceblue;
+	text-decoration: none;
+    font-size: 18px;
+	position: relative;
+}
+
+ul li a:hover{
+	color: rgb(96, 96, 226);
+}
+
+ul li a::after {
+	content: '';
+	background: aliceblue;
+	width: 0;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	transition: 0.5s;
+}
+
+ul li a:hover::after{
+	width: 70%;
+}
+
+.home{
+	min-height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height:60%;
+	width:75%;
+	padding-top: 30px;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+	border-radius: 10px;
+    border: 1.5px solid aliceblue;
+
+}
+
+.main .leftsection{
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	line-height: 1.6;
+	color: rgb(22,22,38); /* Choose an appropriate color for text */
+	padding: 20px;
+	
+}
+
+#name {
+	font-weight: bold;
+	font-size: 24px;
+	color: aliceblue;
+}
+
+#element {
+font-style: italic;
+color: aliceblue; 
+}
+
+.main .leftsection .btn{
+	display: block;
+	text-decoration: none;
+	line-height: 35px;
+	width: 100px;
+	color: rgb(96, 96, 226);
+	background:rgb(22, 22, 38);
+	border-radius: 5px;
+	margin: 15px auto;
+	text-align: center;
+	transition: transform 0.5s;
+}
+.main .leftsection .btn:hover{
+	display: block;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+	color:aliceblue;
+	line-height: 40px;
+	width:120px;
+}
+
+
+.main .rightsection img {
+	width: 250px;
+	height: 250x;
+}
+
+
+.about, .skills , #portfolio {
+	min-height: 100vh;
+	color: aliceblue;
+	padding-top: 10px;
+	width:100%;
+	
+	
+}
+
+	.heading {
+	text-align: center;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+	width: 200px;
+	border: 2px solid aliceblue;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 5px;
+}
+
+.about .content {
+	min-height: 78vh;
+	border: 2px solid rgb(96, 96, 226);
+	border-radius: 15px;
+	margin: 30px;
+}
+
+.about .content {
+	padding-left:5px;
+}
+
+
+.about .content .top {
+	padding: 10px;
+	text-align: center;
+	margin: 10px;
+}
+
+.about hr {
+	border: 0px;
+	height: 0.1px;
+	background-color: rgb(96, 96, 226);
+	margin: 0 100px;
+}
+
+.about .tab-titles{
+	display: flex;
+	margin:20px 0 20px;
+	padding-left: 50px;
+}
+
+.about  .tab-links{
+		margin-right: 50px;
+		font-size : 1.2rem ;
+		font-weight: 500;
+		cursor: pointer;
+		position: relative;
+}
+
+
+.tab-links:after{
+	content : "";
+	width : 0;
+	height: 3px;
+	background:rgb(96, 96, 226) ;
+	position: absolute;
+	left: 0px;
+	bottom: -8px;
+	transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+	width:50%;
+}
+
+.tab-contents ul li{
+	list-style: none;
+	margin: 5px 40px;
+}
+
+.tab-contents ul li span,small{
+	color: rgb(96, 96, 226);
+}
+
+.tab-contents ul li p{
+	margin:5px 0px;
+}
+
+.tab-contents ul hr{
+	border: 0px;
+	height: 0.1px;
+	background-color: rgb(96, 96, 226);
+	margin: 10px 100px 10px 20px;
+}
+
+.tab-contents ul li a{
+	display: block;
+	text-decoration: none;
+	line-height: 40px;
+	width: 120px;
+	color: rgb(22, 22, 38);
+	background:rgb(96, 96, 226);
+	border-radius: 5px;
+	margin: 30px 0px ;
+	transition: transform 0.5s;
+	text-align: center;
+}
+
+.tab-contents ul li  a:hover{
+	display: block;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+	color:aliceblue;
+	line-height: 45px;
+	width:130px;
+	
+}
+
+.tab-contents ul li button:hover a:hover{
+	color: aliceblue;
+}
+
+.tab-contents{
+	display: none;
+}
+
+.tab-contents.active-tab{
+	display: block;
+}
+
+.skillbox{
+	min-height: 78vh;
+	border: 2px solid rgb(96, 96, 226);
+	border-radius: 15px;
+	margin: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#portfolio .container{
+	margin:5px 15px;
+}
+
+
+.work-list{
+	display :grid;
+	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+	grid-gap:40px;
+	margin-top: 50px;
+}
+
+.work{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.work img{
+	height: 70%;
+	border-radius: 10px;
+	display: block;
+	transition: transform 0.5s;
+}
+
+.layer{
+	width:100%;
+	height:0;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+	border-radius: 10px;
+	position: absolute;
+	left:0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    text-align: center;
+	gap: 5px;
+	padding: 0 40px;
+	font-size:14px;
+	transition: height 0.5s;
+}
+
+.layer h3{
+	font-weight: 1000;
+	margin-bottom: 20px;
+}
+
+.layer a{
+	margin-top: 20px;
+	color: rgb(22, 22, 38);
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 60px;
+	background:rgb(22, 22, 38);
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.work:hover img{
+	transform:scale(1.1);
+}
+
+.work:hover .layer{
+	height: 100%;
+}
+
+
+.contact{
+	margin-top:20px;
+}
+
+.contact .heading{
+	width: 300px;
+}
+
+.contactdetails{
+	margin: 15px;
+	border: 2px solid rgb(96, 96, 226);
+	border-radius: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items:center;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+}
+
+.contactdetails div{
+	margin: 0 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.footer{
+	text-align: center;
+	background-color: rgb(75, 75, 95);
+	margin-top: 5px;
+}
+
+/* ---------- CSS For Small Devices--------  */
+
+@media only screen and (max-width: 600px){
+
+
+	nav {
+		display: block;
+		height: 10vh;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	nav h1 {
+		color: aliceblue;
+		font-size: 30px;
+		color: rgb(96, 96, 226);
+
+	}
+	
+	nav div.right{
+		display:none;
+	}
+
+	
+	.home{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.main {
+		display: flex;
+		justify-content: space-around;
+		flex-direction:column-reverse ;
+		align-items: center;
+		height:60%;
+		width:75%;
+		padding-top: 30px;
+		background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+		border-radius: 10px;
+		border: 1.5px solid aliceblue;
+	
+	}
+	
+	.main .leftsection{
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+		line-height: 1.6;
+		color: rgb(22,22,38); /* Choose an appropriate color for text */
+		padding: 20px;
+		
+	}
+	
+	#name {
+		font-weight: bold;
+		font-size: 18px;
+		color: aliceblue;
+	}
+	
+	#element {
+	font-style: italic;
+	color: aliceblue; 
+	}
+
+	.home .main{
+		margin-top: 0px;
+		padding-top: 0px;	
+	}
+	
+	.main .leftsection .btn{
+		display: block;
+		text-decoration: none;
+		line-height: 35px;
+		width: 100px;
+		color: rgb(96, 96, 226);
+		background:rgb(22, 22, 38);
+		border-radius: 5px;
+		margin: 15px auto;
+		text-align: center;
+	}
+	
+	.main .rightsection img {
+		width: 180px;
+	}
+	
+	
+	.about, .skills , #portfolio {
+		min-height: 100vh;
+		color: aliceblue;
+		padding-top: 10px;
+		width:100%;
+	}
+	
+		.heading {
+		text-align: center;
+		background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+		width: 200px;
+		border: 2px solid aliceblue;
+		border-radius: 5px;
+		margin: auto;
+		margin-top: 5px;
+	}
+	
+	.about .content {
+		min-height: 78vh;
+		border: 2px solid rgb(96, 96, 226);
+		border-radius: 15px;
+		margin: 30px;
+		font-size: 10px;
+	}
+	
+	
+	.about .content .top {
+		padding: 10px;
+		margin: 10px;
+	}
+	
+	.about hr {
+		border: 0px;
+		height: 0.1px;
+		background-color: rgb(96, 96, 226);
+		margin: 10px;
+	}
+	
+	.about .tab-titles{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 5px;
+	}
+	
+	.about  .tab-links{
+			margin: 0 10px;
+			font-size : 12px ;
+			font-weight: 100;
+			cursor: pointer;
+			position: relative;
+	}
+	
+	
+	
+	.tab-contents ul li{
+		list-style: none;
+		margin: 15px 40px;
+	}
+	
+	.tab-contents ul li span,small{
+		color: rgb(96, 96, 226);
+		font-size: 15px;
+	}
+	
+	.tab-contents ul li p{
+		margin:5px 0px;
+	}
+	
+	.tab-contents ul hr{
+		border: 0px;
+		height: 0.1px;
+		background-color: rgb(96, 96, 226);
+		margin: 10px;
+	}
+	
+	.tab-contents ul li a{
+		display: block;
+		text-decoration: none;
+		line-height: 40px;
+		width: 100px;
+		color: rgb(22, 22, 38);
+		background:rgb(96, 96, 226);
+		border-radius: 5px;
+		transition: transform 0.5s;
+		text-align: center;
+		
+	}
+	
+	.tab-contents ul li  a:hover{
+		display: block;
+		background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+		color:aliceblue;
+		line-height: 45px;
+		width:130px;
+		
+	}
+	
+	.tab-contents ul li button:hover a:hover{
+		color: aliceblue;
+	}
+	
+	.tab-contents{
+		display: none;
+	}
+	
+	.tab-contents.active-tab{
+		display: block;
+	}
+	
+	
+	.skillbox{
+		min-height: 78vh;
+		border: 2px solid rgb(96, 96, 226);
+		border-radius: 15px;
+		margin: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#portfolio .container{
+		margin:5px 15px;
+	}
+	
+	
+	.work-list{
+		display :grid;
+		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+		grid-gap:40px;
+		margin-top: 50px;
+	}
+	
+	.work{
+		border-radius: 10px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.work img{
+		height: 100%;
+		border-radius: 10px;
+		display: block;
+		transition: transform 0.5s;
+	}
+	
+	.layer{
+		width:100%;
+		height:0;
+		background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+		border-radius: 10px;
+		position: absolute;
+		left:0;
+		bottom: 0;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		gap: 5px;
+		padding: 0 40px;
+		font-size:14px;
+		transition: height 0.5s;
+	}
+	
+	.layer h3{
+		font-weight: 1000;
+		margin-bottom: 20px;
+	}
+	
+	.layer a{
+		margin-top: 20px;
+		color: rgb(22, 22, 38);
+		text-decoration: none;
+		font-size: 18px;
+		line-height: 60px;
+		background:rgb(22, 22, 38);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+	
+	.work:hover img{
+		transform:scale(1.1);
+	}
+	
+	.work:hover .layer{
+		height: 100%;
+	}
+	
+	
+	.contact{
+		margin-top:20px;
+	}
+	
+	.contact .heading{
+		width: 300px;
+
+	}
+	
+	.contactdetails{
+		border: 2px solid rgb(96, 96, 226);
+		border-radius: 15px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content:space-between;
+		align-items:center;
+		background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
+	}
+	
+	.contactdetails div{
+		margin: 0 10px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-evenly;
+		text-align: center;
+	}
+
+	.footer{
+		padding: 2px;
+		font-size: 16px;
+	}
+
+	
+}
