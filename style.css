@@ -396,7 +396,7 @@ color: aliceblue;
 	}
 
 	nav h1 {
-		margin:20px;
+		margin:35px;
 		color: aliceblue;
 		font-size: 30px;
 		color: rgb(96, 96, 226);
@@ -412,7 +412,7 @@ color: aliceblue;
 		min-height: 75vh;
 		display: flex;
 		justify-content: center;
-		align-items:start;
+		align-items:center;
 
 	}
 	
