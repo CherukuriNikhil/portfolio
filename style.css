@@ -387,7 +387,6 @@ color: aliceblue;
 
 
 	nav {
-		margin-top:10vh;
 		display: block;
 		height: 10vh;
 		margin: 0;
@@ -397,6 +396,7 @@ color: aliceblue;
 	}
 
 	nav h1 {
+		margin-top:50px
 		color: aliceblue;
 		font-size: 30px;
 		color: rgb(96, 96, 226);
