@@ -15,15 +15,19 @@ body {
 	color: aliceblue;
 }
 
+#home {
+	min-height: 100vh;
+}
+
 nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	height: 10vh;
-	margin: 30px  10px 0px;
+	margin: 15px ;
 	padding: 10px 10%;
-	flex-wrap:wrap ;
+	
 }
 
 nav h1 {
@@ -67,23 +71,22 @@ ul li a::after {
 }
 
 ul li a:hover::after{
-	width: 70%;
+	width: 50%;
 }
 
 .home{
-	min-height: 85vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+    margin-top:15vh;
+	
 }
 
 .main {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height:60%;
 	width:75%;
-	padding-top: 30px;
+	padding: 30px;
 	background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
 	border-radius: 10px;
     border: 1.5px solid aliceblue;
@@ -94,7 +97,7 @@ ul li a:hover::after{
 	font-family: Arial, sans-serif;
 	font-size: 20px;
 	line-height: 1.6;
-	color: rgb(22,22,38); /* Choose an appropriate color for text */
+	color: rgb(22,22,38); 
 	padding: 20px;
 	
 }
@@ -157,7 +160,7 @@ color: aliceblue;
 }
 
 .about .content {
-	min-height: 78vh;
+	/* min-height: 78vh; */
 	border: 2px solid rgb(96, 96, 226);
 	border-radius: 15px;
 	margin: 30px;
@@ -266,7 +269,7 @@ color: aliceblue;
 }
 
 .skillbox{
-	min-height: 78vh;
+	/* min-height: 78vh; */
 	border: 2px solid rgb(96, 96, 226);
 	border-radius: 15px;
 	margin: 30px;
@@ -386,18 +389,16 @@ color: aliceblue;
 	nav {
 		display: block;
 		height: 10vh;
-		margin: 0;
+		margin: 10px;
 		padding: 0;
 		text-align: center;
 		align-items: center;
 	}
 
 	nav h1 {
-		margin:35px;
 		color: aliceblue;
 		font-size: 30px;
 		color: rgb(96, 96, 226);
-
 	}
 	
 	nav div.right{
@@ -406,11 +407,9 @@ color: aliceblue;
 
 	
 	.home{
-		min-height: 75vh;
 		display: flex;
 		justify-content: center;
-		align-items:center;
-
+        margin-top:0px;
 	}
 	
 	.main {
@@ -419,8 +418,9 @@ color: aliceblue;
 		flex-direction:column-reverse ;
 		align-items: center;
 		height:60%;
-		width:75%;
-		padding-top: 30px;
+		width:90%;
+		margin-top:7vh;
+		padding: 0%;
 		background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
 		border-radius: 10px;
 		border: 1.5px solid aliceblue;
@@ -447,10 +447,7 @@ color: aliceblue;
 	color: aliceblue; 
 	}
 
-	.home .main{
-		margin-top: 0px;
-		padding-top: 0px;	
-	}
+
 	
 	.main .leftsection .btn{
 		display: block;
@@ -488,11 +485,11 @@ color: aliceblue;
 	}
 	
 	.about .content {
-		min-height: 78vh;
+		/* min-height: 78vh; */
 		border: 2px solid rgb(96, 96, 226);
 		border-radius: 15px;
 		margin: 30px;
-		font-size: 10px;
+		font-size: 13px;
 	}
 	
 	
@@ -582,7 +579,7 @@ color: aliceblue;
 	
 	
 	.skillbox{
-		min-height: 78vh;
+		/* min-height: 78vh; */
 		border: 2px solid rgb(96, 96, 226);
 		border-radius: 15px;
 		margin: 30px;
