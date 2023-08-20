@@ -370,7 +370,7 @@ color: aliceblue;
 
 
 	body{
-		width:200vw;
+		width:118vw;
 	}
 
 
@@ -603,6 +603,8 @@ color: aliceblue;
 		flex-direction: column-reverse;
 		justify-content: space-around;
 		padding: 10px;
+		align-items: center;
+		gap: 10px;
 	
 	}
 	
