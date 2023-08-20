@@ -31,7 +31,7 @@ nav {
 }
 
 nav h1 {
-	color: aliceblue;
+	
 	font-size: 2rem;
 	color: rgb(96, 96, 226);
 	
@@ -77,7 +77,8 @@ ul li a:hover::after{
 .home{
 	display: flex;
 	justify-content: center;
-    margin-top:15vh;
+	align-items: center;
+    min-height: calc(100vh - 10vh - 30px);
 	
 }
 
@@ -250,7 +251,7 @@ color: aliceblue;
 .tab-contents ul li  a:hover{
 	display: block;
 	background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
-	color:aliceblue;
+	color:#f0f8ff;
 	line-height: 45px;
 	width:130px;
 	
@@ -346,40 +347,27 @@ color: aliceblue;
 	border-radius: 50%;
 } 
 
+.footer{
+	background: linear-gradient(rgba(96,96,226,0.9), rgba(96,96,226)); ;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+
+}
 
 .contact{
-	margin-top:20px;
-}
-
-.contact .heading{
-	width: 300px;
-}
-
-.contactdetails{
-	margin: 15px;
-	border: 2px solid rgb(96, 96, 226);
-	border-radius: 15px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-between;
-	align-items:center;
-	background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
-}
-
-.contactdetails div{
-	margin: 0 10px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	justify-content: space-around;
 	align-items: center;
-	justify-content: space-evenly;
+	gap:15px;
 }
 
-.footer{
-	text-align: center;
-	background-color: rgb(75, 75, 95);
-	margin-top: 5px;
+.contact div i{
+
 }
+
+
+
 
 /* ---------- CSS For Small Devices--------  */
 
@@ -431,7 +419,7 @@ color: aliceblue;
 		font-family: Arial, sans-serif;
 		font-size: 16px;
 		line-height: 1.6;
-		color: rgb(22,22,38); /* Choose an appropriate color for text */
+		color: rgb(22,22,38); 
 		padding: 20px;
 		
 	}
@@ -485,7 +473,7 @@ color: aliceblue;
 	}
 	
 	.about .content {
-		/* min-height: 78vh; */
+		
 		border: 2px solid rgb(96, 96, 226);
 		border-radius: 15px;
 		margin: 30px;
@@ -579,7 +567,6 @@ color: aliceblue;
 	
 	
 	.skillbox{
-		/* min-height: 78vh; */
 		border: 2px solid rgb(96, 96, 226);
 		border-radius: 15px;
 		margin: 30px;
@@ -609,44 +596,5 @@ color: aliceblue;
 		flex-direction: column;
 		
 	}
-	
 
-	
-	
-	.contact{
-		margin-top:20px;
-	}
-	
-	.contact .heading{
-		width: 300px;
-
-	}
-	
-	.contactdetails{
-		border: 2px solid rgb(96, 96, 226);
-		border-radius: 15px;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content:space-between;
-		align-items:center;
-		background: linear-gradient(rgba(0,0,0,0.6), rgba(96,96,226));
-	}
-	
-	.contactdetails div{
-		margin: 0 10px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: space-evenly;
-		text-align: center;
-	}
-
-	.footer{
-		padding: 2px;
-		font-size: 16px;
-	}
-
-	
-}
+} 
