@@ -349,7 +349,7 @@ color: aliceblue;
 .footer{
 	background: linear-gradient(rgba(96,96,226,0.9), rgba(96,96,226)); ;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding: 10px;
 
 }
@@ -358,7 +358,11 @@ color: aliceblue;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	gap:15px;
+	gap:25px;
+}
+
+.extraClass{
+	font-size:30px
 }
 
 
