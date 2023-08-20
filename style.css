@@ -362,10 +362,6 @@ color: aliceblue;
 	gap:15px;
 }
 
-.contact div i{
-
-}
-
 
 
 
@@ -595,6 +591,23 @@ color: aliceblue;
 		display: flex;
 		flex-direction: column;
 		
+	}
+
+	.footer{
+		background: linear-gradient(rgba(96,96,226,0.9), rgba(96,96,226)); ;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 10px;
+	
+	}
+	
+	.contact{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		gap:15px;
 	}
 
 } 
