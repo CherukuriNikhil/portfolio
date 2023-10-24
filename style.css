@@ -141,7 +141,7 @@ color: aliceblue;
 }
 
 
-.about, .skills , #portfolio {
+.about ,.knowledge, #portfolio {
 	min-height: 100vh;
 	color: aliceblue;
 	padding-top: 10px;
@@ -165,13 +165,8 @@ color: aliceblue;
 	border: 2px solid rgb(96, 96, 226);
 	border-radius: 15px;
 	margin: 30px;
+	padding: 25px;
 }
-
-.about .content {
-	padding-left:5px;
-}
-
-
 .about .content .top {
 	padding: 10px;
 	text-align: center;
@@ -269,6 +264,13 @@ color: aliceblue;
 	display: block;
 }
 
+.knowledge{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+
 .skillbox{
 	border: 2px solid rgb(96, 96, 226);
 	border-radius: 15px;
@@ -277,6 +279,25 @@ color: aliceblue;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+	padding : 20px;
+}
+
+.skillbox div{
+	width:auto;
+	height:30%;
+	text-align: center;
+	padding: 10px;
+	margin: 15px 0 ;
+	border: 2px solid aliceblue;
+	border-radius: 5px;
+	margin: 10px;
+	margin-top: 5px;
+	color:rgb(96, 96, 226)
+}
+
+.skillbox div a{
+	text-decoration: none;
+	color: rgb(96, 96, 226);
 }
 
 
