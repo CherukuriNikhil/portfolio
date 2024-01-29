@@ -2,287 +2,281 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nikhil's Portfolio</title>
-	<link rel="shortcut icon" href="images/cnn.png" type="image/x-icon">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="style.css">
-	<script src="https://kit.fontawesome.com/5fc17f4e5b.js" crossorigin="anonymous"></script>
-
-       <!-- Font Awesome -->
-	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css" integrity="sha512-rOTVxSYNb4+/vo9pLIcNAv9yQVpC8DNcFDWPoc+gTv9SLu5H8W0Dn7QA4ffLHKA0wysdo6C5iqc+2LEO1miAow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
+  <nav id="desktop-nav">
+    <div class="logo">Nikhil's Portfolio</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Nikhil's Portfolio</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./images/profile-pic-3.png" alt="Cherukuri Narasinga Nikhil profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Cherukuri Narasinga Nikhil</h1>
+      <p class="section__text__p2"></p>
+      <!-- Motivated Nursing Student seeking to develop more extensive experience working eith elderly patients -->
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./images/Narasinga Nikhil.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/narasinga-nikhil-cherukuri/" target="_blank">
+          <img src="./images/linkedin.png" alt="My LinkedIn profile" class="icon" />
+        </a>
+        <a href="https://github.com/CherukuriNikhil" target="_blank">
+          <img src="./images/github.png" alt="My Github profile" class="icon" />
+        </a>
 
-	<!-- HOme page starts here -->
-	<div id="home">
-		<nav>
-			<h1>Nikhil's Portfolio</h1>
-			<div class="right">
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#Skills&Techie">Skills & Techie</a></li>
-					<li><a href="#portfolio">Projects</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="home">
-			<div class="main">
-				<div class="leftsection">
-					Hlo, I'm <br><span id="name">Narasinga Nikhil Cherukuri</span>
-					<!-- Element to contain animated typing -->
-					<p> <span id="element"></span></p>
-					<a href="files/Narasinga Nikhil's Resume.pdf" target="_blank" class="btn">Resume</a>
-				</div>
-				<div class="rightsection">
-					<img src="images/profile-pic (1).png" alt="">
-				</div>
-			</div>
-		</div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./images/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p><br />Technical Content Writer</p>
+            <br>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://auth.geeksforgeeks.org/user/narasinganikhil'">
+                GFG
+              </button>
+            </div>
+          </div>
+          <div class="details-container">
+            <img src="./images/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p><br />CPP Programming Intern</p>
+            <br>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CherukuriNikhil/NeuroNexus/tree/master'">
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container">
+            <img src="./images/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <br>
+            <p>BE - Computer Science </p>
+            <br>
+            <p>8.575 CGPA</p>
+          </div>
+          <div class="details-container">
+            <img src="./images/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3><br>
+            <p><b>Secondary Education</b></p>
+            <br>
+            <p>9.54 CGPA </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
 
-	</div>
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PHP</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Technologies</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>GIT</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>GITHUB</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <!-- <div class="article-container">
+            <img src="./images/project-1.png" alt="Project 1" class="project-img" />
+          </div> -->
+          <h2 class="experience-sub-title project-title">CodeConnect</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CherukuriNikhil/CodeConnect-forums'">
+              Github
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <!-- <div class="article-container">
+            <img src="./images/project-2.png" alt="Project 2" class="project-img" />
+          </div> -->
+          <h2 class="experience-sub-title project-title">Colour Picker</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/CherukuriNikhil/ColourPicker'">
+              Github
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <!-- <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./images/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank')">
+              Live Demo
+            </button>
 
-
-
-	<!-- HOme page Ends here -->
-
-	<!-- About page starts here -->
-
-	<div class="about" id="about">
-		<h1 class="heading">About Me</h1>
-		<div class="content">
-			<!-- <div class="top">🚀 Passionate Computer Science student, fueled by innovation and driven to solve intricate
-				challenges with cutting-edge tech. 👩‍💻 Seeking a thrilling opportunity to launch my career in the tech
-				industry, whether it's an internship or first job. 🌟 Armed with a rock-solid foundation in programming,
-				data structures, and algorithms, and always ready to learn and adapt. 🤝 Eager to collaborate with
-				talented teams, crafting solutions that boost businesses and elevate user experiences. 🎯 Ready to
-				contribute my skills and creativity to an organization committed to software excellence and tech
-				advancement! Let's make a difference together! 😃 -->
-				I am a dedicated computer science student actively Seeking a thrilling
-				opportunity to launch my career in the tech industry, whether it’s an
-				internship or first job. With a strong academic background and a passion
-				for technology, I am prepared to contribute my skills and learnings to a
-				professional setting. Eager to engage with industry challenges and
-				collaborate with teams, I am committed to making a valuable impact as I
-				embark on the next phase of my career journey.
-			</div>
-			<hr>
-			<div class="tab-titles">
-				<p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-				<p class="tab-links" onclick="opentab('training')">Industrial Training</p>
-				<p class="tab-links" onclick="opentab('education')">Education</p>
-			</div>
-			<div class="tab-contents active-tab" id="experience">
-				<ul>
-					<li><span>Technical Content Writer Intern</span><br>
-						<small>Geeks For Geeks (February 2023 - August 2023)</small><br>
-						<p>
-							Authored comprehensive articles on diverse technical topics.
-							Revamped and enhanced existing articles,<br>elevating the quality and relevance of the
-							content. Played an integral role in disseminating knowledge<br> to the tech community and
-							supporting their learning
-							journeys.</p>
-						<a href="https://auth.geeksforgeeks.org/user/narasinganikhil" target="_blank">View My Work</a>
-					</li>
-				</ul>
-			</div>
-			<div class="tab-contents " id="training">
-				<ul>
-					<li><span>Web Application For Smart Complaint Tracking</span><br>
-						<small>Rashtriya Ispat Nigam Limited (June 2023 -July 2023)
-						</small><br>
-						<p>
-							Developed a dynamic and user-friendly web-based system, the "Web Application for Smart
-							Complaint Tracking,"<br>elevating the quality and relevance of the
-							content. Played an integral role in disseminating knowledge<br> Achieved the primary goal of
-							the application: efficiently handling complaints, tracking their progress, and providing a
-							seamless
-							experience for both users and administrators.</p>
-						<a href="files/certificate.pdf" target="_blank">certificate</a>
-					</li>
-				</ul>
-			</div>
-			<div class="tab-contents " id="education">
-				<ul>
-					<li>
-						<span>Bachelor of Engineering (B.E.)</span>
-						<p>Sant Longowal Institute Of Engineering and Technology (2020 - 2024)</p>
-						<p>8.6 CGPA</p>
-						<p> Punjab,India</p>
-					</li>
-					<hr>
-					<li>
-						<span>Higher Secondary Education (12th Grade)
-						</span>
-						<p>Fiitjee Junior College (2018 - 2020)</p>
-						<p>9.54 CGPA</p>
-						<p> Andhra Pradesh ,India</p>
-					</li>
-					<hr>
-					<li>
-						<span>Secondary Education (10th Grade)</span>
-						<p>Sri Chaitanya High School (2017 - 2018)</p>
-						<p>9.8 CGPA</p>
-						<p> Andhra Pradesh ,India</p>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- About page Ends here -->
-
-	<div class="knowledge" id="Skills&Techie">
-		<!-- skills page starts here -->
-
-	<div class="skills" id="skills">
-		<h1 class="heading">skills</h1>
-		<div class="skillbox">
-			<div class="items">CPP</div>
-			<div class="items">Java</div>
-			<div class="items">PHP</div>
-			<div class="items">HTML</div>
-			<div class="items">CSS</div>
-			<div class="items">SQL</div>
-			<div class="items">Bootstrap</div>
-			<div class="items">GIT</div>
-			<div class="items">GitHub</div>
-		</div>
-	</div>
-
-	<!-- skill page Ends here -->
-
-	<div class="Techie" id="Techie">
-		<h1 class="heading">Techie</h1>
-		<div class="skillbox">
-			<div class="items"><a href="https://leetcode.com/NarasingaNikhil/" target="_blank">LeetCode</a></div>
-			<div class="items"><a href="https://auth.geeksforgeeks.org/user/narasinganikhil" target="_blank">Geeks For Geeks</a></div>
-			<div class="items"><a href="https://www.hackerrank.com/profile/NarasingaNikhil" target="_blank">Hacker Rank</a></div>
-			<div class="items"><a href="https://www.codechef.com/users/narasinga" target="_blank">Code Chef</a></div>
-		</div>
-	</div>
-	</div>
-
-	
-
-	<!-- Project page starts here -->
-
-	<div id="portfolio">
-		<div class="container">
-			<h1 class="heading">My Work's</h1>
-			<div class="work-list">
-				<div class="work">
-					<img src="images/forums.webp" alt="">
-					<div class="layer">
-						<h2>Forums</h2>
-						<p>A dynamic online platform that allows coding enthusiasts to interact, share knowledge, and
-							discuss coding concepts, fostering a collaborative learning environment for the coding
-							community.</p>
-						<a href="https://github.com/CherukuriNikhil/CodeConnect-forums" target="_blank"><i class="fa-solid fa-link" style="color: #6060e2;"></i></a>
-					</div>
-				</div>
-				<!-- <div class="work">
-					<img src="images/2.jpg" alt="">
-					<div class="layer">
-						<h2>Complaint Tracking</h2>
-						<p>A user-friendly web portal that allows customers to submit complaints online, while
-							businesses can efficiently manage and track the complaint resolution process, leading to
-							improved customer support and issue resolution.</p>
-						<a href="https://github.com/CherukuriNikhil/CodeConnect-forums" target="_blank"><i class="fa-solid fa-link" style="color: #6060e2;"></i></a>
-					</div>
-				</div>    -->
-				<!-- <div class="work">
-				<h1>sorting and searching</h1>
-				<div class="layer">
-					<h3>Algorithm Mastermind</h3>
-					<p>My Ultimate C++ Project for Remembering Searching and Sorting Algorithms! To
-						create an interactive and engaging platform that helps  students master various searching and sorting algorithms using C++. The project will
-						provide a hands-on learning experience, allowing users to implement and visualize
-						the algorithms in action.
-						</p>
-					<a href=""><i class="fa-solid fa-link" style="color: #6060e2;"></i></a>
-				</div>
-			</div> -->
-			</div>
-		</div>
-	</div>
-
-
-	<!-- project page Ends here -->
-
-<!-- footer and contact starts here -->
-
-<div class="footer">
-	<div>Copyright © 2023 Narasinga Nikhil Cherukuri </div>
-	<div class="contact">
-		<div>
-			<a href="mailto:narasinganikhil@gmail.com" target="_blank">
-				<i class="fa-regular fa-envelope extraClass" style="color: #f0f8ff; "></i>
-			</a>
-		</div>
-		<div>
-			<a href="https://www.linkedin.com/in/narasinga-nikhil-cherukuri" target="_blank">
-				<i class="fa-brands fa-linkedin extraClass" style="color: #f0f8ff;"></i>
-			</a>
-		</div>
-		<div>
-			<a href="https://twitter.com/narasinganikhil" target="_blank">
-				<i class="fa-brands fa-x-twitter extraClass" style="color: #f0f8ff;"></i>
-			</a>
-		</div>
-		<div>
-			<a href="https://github.com/CherukuriNikhil" target="_blank">
-				<i class="fa-brands fa-github extraClass" style="color: #f0f8ff;  "></i>
-			</a>
-		</div>
-
-	</div>
-</div>
-
-
-<!-- footer and contact ends here -->
-
-
-
-
-
-
-	<!-- Load library from the CDN -->
-	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-	<!-- Setup and start animation! -->
-	<script>
-		var typed = new Typed('#element', {
-			strings: [ 'Photographer', 'Technical Content Writer', 'BE Final Year Student'],
-			typeSpeed: 100,
-		});
-	</script>
-	<script>
-		var tablinks = document.getElementsByClassName("tab-links");
-		var tabcontents = document.getElementsByClassName("tab-contents");
-
-		function opentab(tabname) {
-			for (tablink of tablinks) {
-				tablink.classList.remove("active-link");
-			}
-			for (tabcontent of tabcontents) {
-				tabcontent.classList.remove("active-tab");
-			}
-			event.currentTarget.classList.add("active-link");
-			document.getElementById(tabname).classList.add("active-tab");
-		}
-	</script>
-
-
-
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:narasinganikhil@gmail.com">narasinganikhil@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/narasinga-nikhil-cherukuri/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Narasinga Nikhil. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
